@@ -8,7 +8,8 @@
 <style>
     .dev{
         
-        
+        width: 28%;
+        background-color: white;
     }
 .de{
     background-color: orange;
@@ -36,8 +37,56 @@
     background-color: green;
 }
 
+button
+{
+    background-color: green;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}
 
+.web .dev table tr td
+{
+    padding: 10px;
+}
+
+.table-items
+{
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    background-color: rgb(225, 225, 225);
+    justify-content: center;
+}
+
+.table
+{
+    background-color: white;
+    width: 22%;
+}
+
+.items
+{
+    background-color: white;
+    width: 72%;
+    margin-left: 10px;
+}
+
+.table td
+{
+    padding: 15px;
+}
+
+.items-row
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
 <body>
     <div class="web">
         <div class="dev">
@@ -54,7 +103,7 @@
 
                     </td>
                     <td class="de">
-                        <button>SEARCH</button>
+                        <button style="background-color: darkorange; padding: 0;">SEARCH</button>
 
                     </td>
                     <td>
@@ -76,123 +125,159 @@
                 
 
             </table>
-            <table>
-                <div>
-                    
-                        
-                
 
-                </div>
+        </div>
+        
+        <div class="table-items">
+                        
+            <table class="table">
                 <tr>
-                    <td>My Jumia Account</td>
+                    <td><i class="fa-regular fa-user"></i> &nbsp; My Jumia Account</td>
                 </tr>
                 <tr>
-                    <td>Orders</td>
+                    <td style="background-color: rgb(188, 188, 188);"><i class="fa-solid fa-boxes-stacked"></i> &nbsp; Orders</td>
                 </tr>
                 <tr>
-                    <td>Inbox</td>
+                    <td><i class="fa-regular fa-envelope"></i> &nbsp; Inbox</td>
                 </tr>
                 <tr>
-                    <td>Pending Reviews</td>
+                    <td><i class="fa-regular fa-comment"></i> &nbsp; Pending Reviews</td>
                 </tr>
                 <tr>
-                    <td>Vouchers</td>
+                    <td><i class="fa-solid fa-ticket-simple"></i> &nbsp; Vouchers</td>
                 </tr>
                 <tr>
-                    <td>Saved Items</td>
+                    <td><i class="fa-solid fa-heart"></i> &nbsp; Saved Items</td>
                 </tr>
                 <tr>
-                    <td>Recently Veiwed</td>
+                    <td><i class="fa-regular fa-clock"></i> &nbsp; Recently Veiwed</td>
                 </tr>
                 <tr>
-                    <td>Account Mangement</td>
+                    <td style="border-top: 1px solid black;"> &nbsp; Account Mangement</td>
                 </tr>
                 <tr>
                     <td>Address Book</td>
                 </tr>
                 <tr>
                     <td>Newsletters Perferences</td>
-            </tr>
-                    
-            
-
+                </tr>
             </table>
            
         
+            <div class="items">
+                <table>
+                    <tr>
+                        <td>orders</td>
+            
+                    </tr>
+                    <tr>
+                        <td class="ss">OPEN ORDERS(22)</td>
+                        <td class="">CLOSED ORDERS(4)</td>
+                    </tr><hr>
+                </table>    
+                <div class="items-row">
+                    <div>
+                    
+                        <table cellpadding="12px" rowspan="4">
+                                <tr>
+                                    <td rowspan="5"><img src="backpack.jpg" alt="" style="width: 100px; height: 100px;"></td>
+                                </tr>
+                                <tr>
+                                    <th>5 piece Diaper Bag-purple</th>
+                                </tr>
+                                <tr>
+                                    <td>oder 302132791</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="form">DELIVERED</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        on-04-09
+                                    </td>
+                        </table>
+                    </div>
+                    <span class="cla">SEE DETAILS</span>
+                </div>
+                <tr>
+                    <table cellpadding="2" rowspan="4">
+                        <tr>
+                            <td rowspan="6"><img src="stand.jpg" alt="" style="width: 100px; height: 100px;"></td>
+                        </tr>
+                        <tr>
+                            <td>Metal Foldable Adjustable stand for laptop</td>
+                            <td class="cla">SEE DETAILS</td>
+                        </tr>
+                        <tr>
+                            <td> 
+                                order 305397561
+            
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Qty:2</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button>DELIVRED</button>
+                            </td>
+                        
+                        </tr>
+                        <tr>
+                            <td>
+                                On 16-08
+                            </td>
+                        </tr>   
+            
+            
+                    </table>
+                </tr>
 
+                <tr>
+                    <table cellpadding="2" rowspan="4">
+                        <tr>
+                            <td rowspan="6"><img src="stand.jpg" alt="" style="width: 100px; height: 100px;"></td>
+                        </tr>
+                        <tr>
+                            <td>Metal Foldable Adjustable stand for laptop</td>
+                            <td class="cla">SEE DETAILS</td>
+                        </tr>
+                        <tr>
+                            <td> 
+                                order 305397561
+            
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Qty:2</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button>DELIVRED</button>
+                            </td>
+                        
+                        </tr>
+                        <tr>
+                            <td>
+                                On 16-08
+                            </td>
+                        </tr>
+            
+            
+            
+                    </table>
+                </tr>
+            </div>
+            
+        
         </div>
 
-        
+            
 
     </div>
-    <tr>
-        <table>
-            <tr>
-                <td>orders</td>
-    
-            </tr>
-            <tr>
-                <td class="ss">OPEN ORDERS(22)</td>
-                <td class="">CLOSED ORDERS(4)</td>
-            </tr><hr>
-            <table border="2" cellpadding="12px" rowspan="4">
-                <tr>
-                    <th>5 piece Diaper Bag-purple</th>
-                    <td class="cla">SEE DETAILS</td>
-                </tr>
-                <tr>
-                    <td>oder 302132791</td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="form">DELIVERED</button>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td>
-                        on-04-09
-                    </td>
-            </table>
-           
 
-    </tr>
-    <tr>
-        <table border="2" cellpadding="2" rowspan="4">
-            <tr>
-                <td>Metal Foldable Adjustable stand for laptop</td>
-                <td class="cla">SEE DETAILS</td>
-            </tr>
-            <tr>
-                <td> 
-                    order 305397561
-
-                </td>
-            </tr>
-            <tr>
-                <td>Qty:2</td>
-            </tr>
-            <tr>
-                <td>
-                    <button>DELIVRED</button>
-                </td>
-            
-            </tr>
-            <tr>
-                <td>
-                    On 16-08
-                </td>
-            </tr>
-
-
-
-
-
-
-        </table>
-    </tr>
-    
-        
         
             
         
